@@ -1,6 +1,6 @@
 {
   "name": "dashboard",
-  "homepage": "https://hashtagronit.github.io/ReactJS-Internship-Week3-4-Admin-Dashboard/",
+  "homepage": "https://hashtagronit.github.io/dashboard/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

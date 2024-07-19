@@ -45,5 +45,5 @@ module.exports = {
     },
   },
   plugins: [],
-  base: "/ReactJS-Internship-Week3-4-Admin-Dashboard/"
+  base: "/dashboard/"
 };
