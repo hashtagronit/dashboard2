@@ -4,8 +4,9 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import {  Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
+import Ecommerce from './pages/Ecommerce.jsx';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
-      <BrowserRouter>
+      <BrowserRouter basename="/dashboard2">
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent
@@ -65,7 +66,9 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={<Navigate to="/ecommerce" />} />
+                <Route path="/" element={<Navigate to="/ecommerce" replace={true} />} />
+
+                
                 <Route path="/ecommerce" element={(<Ecommerce />)} />
 
                 {/* pages  */}
