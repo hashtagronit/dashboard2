@@ -1,6 +1,6 @@
 {
-  "name": "Dashboard",
-  "homepage": "https://github.com/hashtagronit/Dashboard",
+  "name": "dashboard",
+  "homepage": "https://github.com/hashtagronit/dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
